@@ -1,0 +1,31 @@
+:root {
+    --primaryBorder: 1px solid rgba(255, 255, 255, 0.3);
+    --tableBg: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+    text-align: center;
+    padding: 2rem;
+}
+
+.main-content table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: var(--primaryBorder);
+}
+
+.main-content table td,
+.main-content table th {
+    padding: 20px 10px;
+    border-right: var(--primaryBorder);
+}
+
+.main-content table th {
+    background-color: var(--tableBg);
+    vertical-align: top;
+}
+
+.main-content table td {
+    border-top: var(--primaryBorder);
+}
